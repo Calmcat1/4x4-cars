@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+@keyframes loadingmove{
+  0%{
+    background-color: rgba(255, 255, 255, 0.349);
+  }
+ 
+
+  100%{
+    background-color: rgba(0, 0, 0, 0.274);
+  } 
+}
+
+@keyframes backwardmove{
+
+  0%{
+    background-color: rgba(0, 0, 0, 0.274);
+  }
+
+  100%{
+    background-color: rgba(255, 255, 255, 0.349);
+  }
+}
+
+
+
+
+body{
+  margin: 0 0 0 0;
+  font-family: Roboto;
+  background: rgb(5,2,2);
+  background: linear-gradient(90deg, rgba(5,2,2,1) 0%, rgba(128,1,1,1) 49%, rgba(255,134,0,1) 100%);
+  
+}
+
+#mainloader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: rgb(5,2,2);
+  background: linear-gradient(90deg, rgba(5,2,2,1) 0%, rgba(128,1,1,1) 49%, rgba(255,134,0,1) 100%);
+}
+
+.dots, .dots2{
+  background-color: yellow;
+  height: 3px;
+  width: 70px;
+  animation: loadingmove 0.5s infinite;
+
+}
+
+.dots2{
+  background-color: orange;
+  animation: backwardmove 0.5s infinite;
+}
+
+
+.loading{
+  display: flex;
+  
+}
