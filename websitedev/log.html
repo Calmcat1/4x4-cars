@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="CSS/logstyle.css">
+
+<body>
+
+  <p><span class="error">*field required</span></p>
+
+  <div class="nav">
+
+    <div class="logo">
+      <button class="tablinks" onclick="pageSwitcher('landingpg',this)" id="defaultOpen">Home</button>
+      
+    </div>
+
+    <div class="home">
+      <button class="tablinks" onclick="pageSwitcher('calculatorpg', this)">&#9750;</button>
+    </div>
+
+    <div class="navelements">
+      <button class="tablinks" onclick="pageSwitcher('signpgs',this)">Account</button>
+    </div>
+
+  </div>
+
+  <div class="tabcontent" id="landingpg">
+    
+    <div class="maincontainer">
+
+      <div class="container1">
+        <h1>Welcome, sign in to access your feed</h1>
+
+        <h2>letter index</h2>
+        <ul>
+          
+          <li><a href="#">a</a></li>
+          <li><a href="#">b</a></li>
+          <li><a href="#">c</a></li>
+          <li><a href="#">d</a></li>
+          <li><a href="#">e</a></li>
+        
+        </ul>
+
+        <h2>number index</h2>
+        <ul>
+
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+
+        </ul>
+
+        <h2>random index</h2>
+
+        <ul>
+          <li><a href="#">1A</a></li>
+          <li><a href="#">2F</a></li>
+          <li><a href="#">3G</a></li>
+          <li><a href="#">4W</a></li>
+          <li><a href="#">5K</a></li>
+
+        </ul>
+
+        <p>random site<br>
+           2024</p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+
+      <div class="links1">
+        <h1>Additionals</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
+      </div>
+
+      <div class="links2">
+        <h1>Links</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
+      </div>
+
+      <div class="links3">
+        <h1>Other Pages</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+    
+  </div>
+
+
+
+
+  <div class="tabcontent" id="signpgs">
+    <div class="maincontainer">
+
+      
+
+      <div class="formcontainer">
+        <button class="togglebtns" id="signin" onclick="modeswitcher('signinform',this)">Sign In</button>
+        <button class="togglebtns" onclick="modeswitcher('signupform',this)">Sign Up</button>
+
+        <form class="formcontent" id="signinform">
+          <input type="text" name="username" placeholder="username"><br>
+          <input type="password" name="userpassword" placeholder="password"><br>
+          <a href="#" onclick="modeswitcher('recoveryform',null)" >forgot password?</a><br>
+          <input type="submit" name="sign in" class="submitbtn"><br>
+          
+        </form>
+
+        <form class="formcontent" id="signupform" >
+          <input type="text" name="username" placeholder="username"><br>
+          <input type="email" name="email" placeholder="email address"><br>
+          <input type="password" name="userpassword" placeholder="password"><br>
+          <input type="password" name="userconfirmpassword" placeholder="confirm password"><br>
+          <input type="submit" name="sign in" class="submitbtn"><br>
+          <a href="#" onclick="notnewredire()">not new?</a><br>
+
+        </form>
+
+
+        <form class="formcontent" id="recoveryform">
+          <h1>recovery</h1>
+          <input type="text" name="username" placeholder="username"><br>
+          <input type="email" name="useremail" placeholder="email"><br>
+          <input type="submit" name="sign in" class="submitbtn"><br>
+          
+        </form>
+
+      </div>
+   </div>
+
+  </div>
+
+  <div class="tabcontent" id="calculatorpg">
+    <div class="maincontainer">
+      <div class="container1">
+
+        <div class="screen" onclick="divContentSwitcher('news')">
+          <p>news</p>
+        </div>
+
+        <div class="screen" onclick="divContentSwitcher('ads')">
+          <p>ads</p>
+        </div>
+
+        <div class="screen" onclick="divContentSwitcher('screen')">
+          <p>screen</p>
+        </div>
+
+        <div class="screen" onclick="divContentSwitcher('lvl')">
+          <p>lvl</p>
+        </div>
+        
+      
+      </div>
+
+      <div class="maincontainer1" id="news" >
+        <h1>News</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+
+      <div class="maincontainer1" id="ads">
+        <h1>ads</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+
+      <div class="maincontainer1" id="screen">
+        <h1>screen</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+
+      <div class="maincontainer1" id="lvl">
+        <h1>lvl</h1>
+        <ul>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <script src="JS/logfunct.js"></script>
+  
+</body>
+</html>

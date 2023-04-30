@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+body{
+  margin: 0 0 0 0;
+  font-family: Roboto;
+  background: rgb(5,2,2);
+  background: linear-gradient(0deg, rgba(5,2,2,1) 0%, rgba(128,1,1,1) 49%, rgba(255,134,0,1) 100%);
+}
+
+.maincontainer{
+ 
+  width: auto;
+  height: 100vh;
+}
+
+

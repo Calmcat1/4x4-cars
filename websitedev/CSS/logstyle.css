@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 0 0;
+  background: rgb(5,2,2);
+  background: linear-gradient(90deg, rgba(5,2,2,1) 0%, rgba(128,1,1,1) 49%, rgba(255,134,0,1) 100%);
+  font-family: roboto;
+}
+
+
+
+form{
+  display: none;
+  font-family: Roboto;
+  
+  
+  
+}
+
+
+
+a{
+  margin-top: 50px;
+  color: rgba(245, 103, 39, 1)
+}
+
+h1{
+  color: rgba(255, 255, 255, 0.473);
+  font-size: 2.3em;
+}
+
+.tabcontent{
+  display: none;
+}
+
+
+
+input, .togglebtns{
+  padding: 10px 20px 10px 20px;
+  margin-top: 75px;
+  font-family: Roboto;
+  font-size: 1.5em;
+  border-radius: 6px;
+  background-color:rgba(0, 0, 0, 0.192);
+  border-style: solid;
+  border-width: 1px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  transition: 0.15s background-color;
+  
+}
+
+
+input:focus, .backbtn:hover{
+  background-color: rgba(255, 255, 255, 0.055);
+  border: none;
+  outline: none;
+  padding: 10px 20px 11px 20px;
+
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.maincontainer{
+  padding-top: 20px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formcontainer{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 30px 45px 30px;
+  border-radius: 10px;
+  
+}
+
+.togglebtns{
+  margin-top: 20px;
+  transition: 0.15s background-color;
+ 
+}
+
+#signin{
+  margin-right: 70px;
+}
+
+
+
+.recoverycontent{
+  display: block;
+}
+
+
+
+#recobtn:hover{
+  color: white;
+}
+
+#recobtn:active{
+  opacity: 0.6;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  border: 1px white solid;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+}
+
+.nav button{
+text-decoration: none;
+color: white;
+font-size: 2em;
+background-color: transparent;
+border: none;
+
+
+
+}
+
+
+.container1, .maincontainer1{
+width: auto;
+margin-top: 75px;
+background-color:rgba(0, 0, 0, 0.164);
+border-radius: 20px;
+}
+
+.tablinks{
+  padding: 6px 17px 6px 17px;
+  border-radius: 10px;
+  transition: 0.15s background-color, 0.15s display;
+}
+
+.container1{
+  padding: 6px 17px 6px 17px;
+}
+
+.footer{
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.534);
+}
+
+
+.btnshelf{
+  display: flex;
+  gap: 50px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.screen{
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 40px 40px 40px 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  transition: 0.15s padding;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.603);
+}
+  
+
+.screen:hover{
+  background-color: rgba(255, 255, 255, 0.055);
+  border: none;
+  outline: none;
+  padding: 40px 40px 40px 40px;
+  color: rgba(255, 255, 255, 0.322);
+  cursor: pointer;
+
+ 
+}
+
+.screen:active{
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+
+
+
+
+#calculatorpg .maincontainer{
+  justify-content: flex-start;
+  gap: 32.5%;
+  align-items: stretch;
+  
+  
+}
+
+.maincontainer1{
+  display: none;
+  padding: 10px 30px 10px 30px;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+
+
+@media only screen and (max-width: 425px){
+
+  body{
+    background: rgb(5,2,2);
+    background: linear-gradient(180deg, rgba(5,2,2,1) 0%, rgba(128,1,1,1) 49%, rgba(255,134,0,1) 100%);
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  input, .togglebtns{
+    padding: 6px 17px 6px 17px;
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 1.5em;
+    border-radius: 6px;
+    background-color:rgba(0, 0, 0, 0.192);
+    border: none;
+    
+  }
+
+ 
+
+  .formcontainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 20px 45px 20px;
+    border-radius: 10px;
+  }
+
+  .submitbtn{
+    border: orange;
+    color: orange;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  input:focus{
+    padding: 7px 18px 7px 18px;
+  
+  }
+
+  .footer{
+    flex-direction: column
+  }
+}
+
