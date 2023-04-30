@@ -27,7 +27,6 @@ elmnt.style.backgroundColor = "rgba(245, 103, 39, 1)"
 
 
 
-
 }
 
 document.getElementById("signin").click()
@@ -62,7 +61,6 @@ function pageSwitcher(page,elmnt){
   }
 
   elmnt.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
-  elmnt.style.color
 }
 
 function divContentSwitcher(screen){
