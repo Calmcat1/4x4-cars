@@ -8,10 +8,32 @@
 </head>
 
 <link rel="stylesheet" href="CSS/logstyle.css">
+<link rel="stylesheet" href="CSS/loading.css">
 
-<body>
+<body onload="loader()">
 
-  <p><span class="error">*field required</span></p>
+
+  <div id="mainloader" >
+    <div class="loading">
+      <div class="dots">
+
+      </div>
+
+      <div class="dots2">
+        
+      </div>
+
+      <div class="dots">
+        
+      </div>
+
+      <div class="dots2">
+        
+      </div>
+    </div>
+  </div>
+
+  
 
   <div class="nav">
 
@@ -29,6 +51,8 @@
     </div>
 
   </div>
+
+
 
   <div class="tabcontent" id="landingpg">
     
@@ -235,6 +259,7 @@
 
 
   <script src="JS/logfunct.js"></script>
+  <script src="JS/loading.js"></script>
   
 </body>
 </html>
